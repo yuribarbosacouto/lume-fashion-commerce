@@ -1,0 +1,38 @@
+name: Feature request
+description: Suggest a focused product or technical improvement.
+title: "feat: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user or business problem does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Describe the smallest useful version.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: |
+        - Users can...
+        - The state persists...
+        - Tests cover...
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Catalog
+        - Product page
+        - Cart
+        - Checkout
+        - Documentation
+        - Tooling

@@ -96,7 +96,9 @@ export function CheckoutClient() {
             <ul className="mt-5 space-y-4">
               {items.map((item) => (
                 <li className="grid grid-cols-[64px_1fr] gap-3" key={cartKey(item)}>
-                  <Image alt="" className="aspect-[3/4] rounded-md object-cover" height={86} src={item.image} style={{ height: "auto" }} width={64} />
+                  <div className="relative aspect-[3/4] w-16 overflow-hidden rounded-md bg-stone-100">
+                    <Image alt="" className="object-cover" fill sizes="64px" src={item.image} />
+                  </div>
                   <div>
                     <p className="font-semibold">{item.name}</p>
                     <p className="text-sm text-stone-600">{item.color} / {item.size} / Qtd. {item.quantity}</p>

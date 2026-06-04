@@ -52,25 +52,25 @@ export function ProductDetail({ product, related }: { product: Product; related:
             {product.images.map((item) => (
               <button
                 aria-label={`Ver imagem de ${product.name}`}
-                className={`overflow-hidden rounded-md border ${image === item ? "border-stone-950" : "border-stone-200"}`}
+                className={`relative h-[120px] w-[90px] shrink-0 overflow-hidden rounded-md border ${
+                  image === item ? "border-stone-950" : "border-stone-200"
+                }`}
                 key={item}
                 onClick={() => setImage(item)}
                 type="button"
               >
-                <Image alt="" className="aspect-[3/4] object-cover" height={120} src={item} style={{ height: "auto" }} width={90} />
+                <Image alt="" className="object-cover" fill sizes="90px" src={item} />
               </button>
             ))}
           </div>
-          <div className="order-1 overflow-hidden rounded-lg bg-stone-100 lg:order-2">
+          <div className="relative order-1 aspect-[3/4] overflow-hidden rounded-lg bg-stone-100 lg:order-2">
             <Image
               alt={`Modelo usando ${product.name}`}
-              className="aspect-[3/4] w-full object-cover"
-              height={1200}
+              className="object-cover"
+              fill
               priority
               sizes="(min-width: 1024px) 55vw, 100vw"
               src={image}
-              style={{ height: "auto" }}
-              width={900}
             />
           </div>
         </div>

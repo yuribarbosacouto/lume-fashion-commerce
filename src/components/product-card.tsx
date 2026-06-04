@@ -9,16 +9,14 @@ export function ProductCard({ product, priority = false }: { product: Product; p
   return (
     <article className="group" data-testid="product-card">
       <Link aria-label={`Ver produto ${product.name}`} className="block" href={`/produto/${product.slug}`}>
-        <div className="relative overflow-hidden rounded-lg bg-stone-100">
+        <div className="relative aspect-[3/4] overflow-hidden rounded-lg bg-stone-100">
           <Image
             alt={`Modelo usando ${product.name}`}
-            className="aspect-[3/4] w-full object-cover transition duration-500 group-hover:scale-[1.03]"
-            height={720}
+            className="object-cover transition duration-500 group-hover:scale-[1.03]"
+            fill
             priority={priority}
             sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
             src={product.images[0]}
-            style={{ height: "auto" }}
-            width={540}
           />
           <div className="absolute left-3 top-3 flex flex-wrap gap-2">
             {product.badge ? (

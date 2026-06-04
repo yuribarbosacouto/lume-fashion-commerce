@@ -41,6 +41,12 @@ npm run test:e2e
 
 O projeto usa override de `postcss` para manter `npm audit --audit-level=moderate` sem alertas enquanto preserva Next.js 16.
 
+## Governanca
+
+- Guia de contribuicao: [CONTRIBUTING.md](CONTRIBUTING.md)
+- Politica de seguranca: [SECURITY.md](SECURITY.md)
+- Templates de issue e pull request em [`.github`](.github)
+
 ## Como rodar
 
 ```bash

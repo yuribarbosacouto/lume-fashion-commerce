@@ -16,6 +16,7 @@ export default function Home() {
             height={1200}
             priority
             src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1600&q=84"
+            style={{ height: "100%", width: "100%" }}
             width={1400}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/20 to-transparent" />
@@ -113,6 +114,7 @@ function FeatureCard({ eyebrow, href, image, title }: { eyebrow: string; href: s
         className="absolute inset-0 h-full w-full object-cover opacity-75 transition duration-500 group-hover:scale-[1.03]"
         height={720}
         src={image}
+        style={{ height: "100%", width: "100%" }}
         width={900}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-stone-950/90 to-stone-950/10" />

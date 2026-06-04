@@ -65,14 +65,9 @@ export function CartDrawer() {
                     const key = cartKey(item);
                     return (
                       <li className="grid grid-cols-[88px_1fr] gap-4" key={key}>
-                        <Image
-                          alt=""
-                          className="aspect-[3/4] rounded-md object-cover"
-                          height={120}
-                          src={item.image}
-                          style={{ height: "auto" }}
-                          width={90}
-                        />
+                        <div className="relative aspect-[3/4] w-[88px] overflow-hidden rounded-md bg-stone-100">
+                          <Image alt="" className="object-cover" fill sizes="88px" src={item.image} />
+                        </div>
                         <div>
                           <div className="flex items-start justify-between gap-3">
                             <div>
