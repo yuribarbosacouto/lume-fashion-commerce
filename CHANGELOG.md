@@ -2,6 +2,12 @@
 
 All notable changes to Lume Fashion Commerce are documented here.
 
+## [0.1.1] - 2026-06-09
+
+### Changed
+
+- Updated development dependencies through the Dependabot maintenance PR.
+
 ## [0.1.0] - 2026-06-09
 
 ### Added
