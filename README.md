@@ -1,5 +1,7 @@
 # Lume Fashion Commerce
 
+Projeto de produto/UX do portfolio: mostra discovery, catalogo, pagina de produto, carrinho, checkout e testes de funil. Ele complementa o OpsFlow, que e mais forte em sistema administrativo/full stack.
+
 ![CI](https://github.com/yuribarbosacouto/lume-fashion-commerce/actions/workflows/ci.yml/badge.svg)
 ![Pages](https://github.com/yuribarbosacouto/lume-fashion-commerce/actions/workflows/pages.yml/badge.svg)
 ![CodeQL](https://github.com/yuribarbosacouto/lume-fashion-commerce/actions/workflows/codeql.yml/badge.svg)
